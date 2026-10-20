@@ -33,11 +33,8 @@ def longestPalindrome(s:str)->str:
             left-=1
             right+=1            
     
-    return s[start:start+ max_lengthlength]
+    return s[start:start+ max_length]
     
-
-
-
 
 
 
