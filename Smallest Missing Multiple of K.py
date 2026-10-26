@@ -34,3 +34,12 @@ def missingMultiple(num,k):
 
     return target            
 
+
+def missingMultiple(nums,k)->int:
+    num_set = set(nums)
+    i = 1
+    while True:
+        multiple = k * i
+        if multiple not in num_set:
+            return multiple
+        i+=1

@@ -21,3 +21,13 @@ while n>0:
     n = n//10
 
     return sign * rev 
+
+
+
+
+def countSubstring(s):
+    n = len(s)
+    count = 0
+
+    for i in range(n):
+        

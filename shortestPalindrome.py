@@ -16,7 +16,7 @@ class Solution:
         
         rev_s = s[::-1]
         temp = s + "#" + rev_s
-        n = len(temp)
+        n = len(temp)  
         
         # Step 1: KMP LPS Table construct karo
         lps = [0] * n
@@ -76,3 +76,15 @@ while i < n:
     rem = s[longest_pal_len:]
 
     return rem[::-1] + s
+
+
+
+
+
+def shortestPalindrome(s):
+    n = len(s)
+    rev_s = "".join(reversed(s))
+    for i in range(n):
+        if s.startswith(rev_s[i:]):
+            rem = rev[:i]
+    return rem + s        
